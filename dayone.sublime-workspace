@@ -1,0 +1,628 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"end",
+				"end_time\t(Bids.java)"
+			],
+			[
+				"this",
+				"thisBid"
+			],
+			[
+				"get",
+				"getId"
+			],
+			[
+				"bootstrap",
+				"bootstrap.min.css"
+			],
+			[
+				"name",
+				"name2"
+			],
+			[
+				"pri",
+				"print"
+			],
+			[
+				"ret",
+				"return\treturn"
+			],
+			[
+				"W",
+				"WriteLine(char[] buffer)\tvoid"
+			],
+			[
+				"write",
+				"WriteLine(char value)\tvoid"
+			],
+			[
+				"COn",
+				"Convert"
+			],
+			[
+				"Rea",
+				"ReadLine"
+			],
+			[
+				"p",
+				"pum\tPublic Method"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/C# Compile & Run/CSharpSingleFileBuild.sublime-build",
+					""
+				],
+				[
+					"Packages/C# Compile & Run/CSharpSingleFileBuild.sublime-build",
+					"Run"
+				],
+				[
+					"Packages/JSLint/JSLint.sublime-build",
+					""
+				],
+				[
+					"Packages/SublimeREPL/sublimerepl_build_system_hack.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/C# Compile & Run/CSharpSingleFileBuild.sublime-build",
+				"Run"
+			]
+		],
+		[
+			[
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					""
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					"Run"
+				]
+			],
+			[
+				"Packages/C++/C++ Single File.sublime-build",
+				"Run"
+			]
+		],
+		[
+			[
+				[
+					"Packages/Java/Ant.sublime-build",
+					""
+				],
+				[
+					"Packages/Java/JavaC.sublime-build",
+					""
+				],
+				[
+					"Packages/Packages/Java/Ant.sublime-build",
+					""
+				],
+				[
+					"Packages/Packages/Java/JavaC.sublime-build",
+					""
+				],
+				[
+					"Packages/JSLint/JSLint.sublime-build",
+					""
+				],
+				[
+					"Packages/SublimeREPL/sublimerepl_build_system_hack.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/Java/Ant.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 151.0,
+		"last_filter": "sssq",
+		"selected_items":
+		[
+			[
+				"sssq",
+				"Set Syntax: SQL"
+			],
+			[
+				"re",
+				"File: Rename"
+			],
+			[
+				"ssht",
+				"Set Syntax: HTML (Tcl)"
+			],
+			[
+				"ssjsp",
+				"Set Syntax: Java Server Page (JSP)"
+			],
+			[
+				"ip",
+				"Package Control: Install Package"
+			],
+			[
+				"html",
+				"HTMLPrettify"
+			],
+			[
+				"ssx",
+				"Set Syntax: XML"
+			],
+			[
+				"sscss",
+				"Set Syntax: CSS"
+			],
+			[
+				"prett",
+				"HTMLPrettify"
+			],
+			[
+				"ssc++",
+				"Set Syntax: C++11"
+			],
+			[
+				"ssim",
+				"Set Syntax: C Improved"
+			],
+			[
+				"ss",
+				"Set Syntax: Java"
+			],
+			[
+				"javasc",
+				"Javascript Beautify"
+			],
+			[
+				"beau",
+				"HTMLBeautify"
+			],
+			[
+				"markd",
+				"Set Syntax: Markdown"
+			],
+			[
+				"ssq",
+				"Set Syntax: SQL"
+			],
+			[
+				"reinde",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"ssja",
+				"Set Syntax: Java"
+			],
+			[
+				"inde",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"termina",
+				"Terminal: Open"
+			],
+			[
+				"omnisharpserver",
+				"OmniSharpSublime: Show Server Output"
+			],
+			[
+				"pref",
+				"Preferences: SFTP Settings"
+			],
+			[
+				"ep",
+				"Package Control: Enable Package"
+			],
+			[
+				"omnishaserver",
+				"OmniSharpSublime: Show Server Output"
+			],
+			[
+				"OMNI",
+				"OmniSharpSublime: Add New Class"
+			],
+			[
+				"prefrence",
+				"Edit Preferences: Edit Settings…"
+			],
+			[
+				"change",
+				"Changelog"
+			],
+			[
+				"prefere",
+				"Preferences: Settings"
+			],
+			[
+				"lint",
+				"SublimeLinter: Lint This View"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"ipack",
+				"Package Control: Install Package"
+			],
+			[
+				"filesa",
+				"File: Save All"
+			],
+			[
+				"save",
+				"Project: Save As"
+			],
+			[
+				"rena",
+				"File: Rename"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"replshe",
+				"SublimeREPL: Shell"
+			],
+			[
+				"ipac",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 540.0
+	},
+	"console":
+	{
+		"height": 209.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/ashutoshk/Documents/Code/eclipse/DayOne"
+	],
+	"file_history":
+	[
+		"/Users/ashutoshk/Documents/Code/eclipse/DayOne/src/com/obs/controllers/HomeController.java",
+		"/Users/ashutoshk/Documents/Code/eclipse/DayOne/src/com/obs/controllers/CustomerController.java",
+		"/Users/ashutoshk/Documents/Code/eclipse/DayOne/src/com/obs/service/CustomerServiceImpl.java",
+		"/Users/ashutoshk/Documents/Code/eclipse/DayOne/src/com/obs/service/BidServiceImpl.java",
+		"/Users/ashutoshk/Documents/Code/eclipse/DayOne/src/com/obs/service/BidService.java",
+		"/Users/ashutoshk/Documents/Code/eclipse/DayOne/src/com/obs/dao/BidDaoImpl.java",
+		"/Users/ashutoshk/Documents/Code/eclipse/DayOne/src/com/obs/pojos/Bids.java",
+		"/Users/ashutoshk/Documents/Code/eclipse/DayOne/src/com/obs/dao/BidDao.java",
+		"/Users/ashutoshk/Desktop/Plan A",
+		"/Users/ashutoshk/Documents/Code/eclipse/DayOne/src/com/obs/dao/CustomerDao.java",
+		"/Users/ashutoshk/Documents/Code/eclipse/DayOne/src/com/obs/dao/CustomerDaoImpl.java",
+		"/Users/ashutoshk/Documents/Code/eclipse/DayOne/src/com/obs/dao/BidDao.java.bak",
+		"/Users/ashutoshk/Documents/Code/eclipse/DayOne/src/com/obs/pojos/Product.java",
+		"/Users/ashutoshk/Documents/Code/eclipse/DayOne/src/com/obs/pojos/Customer.java",
+		"/Users/ashutoshk/Documents/Code/eclipse/DayOne/src/com/obs/pojos/Category.java",
+		"/Users/ashutoshk/Documents/Code/eclipse/DayOne/src/com/obs/pojos/AbstractTimestampEntity.java",
+		"/Users/ashutoshk/Documents/Code/eclipse/DayOne/src/com/obs/service/BidServiceImpl.java.bak",
+		"/Users/ashutoshk/Documents/Code/eclipse/DayOne/src/com/obs/service/BidService.java.bak",
+		"/Users/ashutoshk/Desktop/BiddingService.java",
+		"/Users/ashutoshk/Documents/Junk/obsgithub/spring/src/com/obs/pojos/Bids.java",
+		"/Users/ashutoshk/Desktop/Category.java",
+		"/Users/ashutoshk/Documents/Code/eclipse/DayOne/WebContent/WEB-INF/views/cust/register.jsp.bak",
+		"/Users/ashutoshk/Documents/Junk/obsgithub/spring/WebContent/WEB-INF/views/cust/logout.jsp",
+		"/Users/ashutoshk/Desktop/Product.java",
+		"/Users/ashutoshk/Documents/Junk/obsgithub/spring/src/com/obs/pojos/Product.java",
+		"/Users/ashutoshk/Desktop/ProductService.java",
+		"/Users/ashutoshk/Downloads/nmac.to_das405.zip.html",
+		"/Users/ashutoshk/Documents/Code/intellij/dayThree/rss-web/src/main/resources/properties/messages_pl.properties",
+		"/Users/ashutoshk/Documents/Code/intellij/dayThree/rss-web/src/main/resources/properties/messages_en.properties",
+		"/Users/ashutoshk/Downloads/img5.jpg",
+		"/Users/ashutoshk/Documents/Junk/register.jsp",
+		"/Users/ashutoshk/Documents/Code/intellij/Code Trash/spring-web-rss-channels copy 2/rss-core/src/main/java/pl/dmichalski/rss/core/entity/ProductEntity.java",
+		"/Users/ashutoshk/Documents/Code/intellij/Code Trash/spring-web-rss-channels copy 2/rss-core/src/main/java/pl/dmichalski/rss/core/entity/CategoryEntity.java",
+		"/Users/ashutoshk/Documents/Code/eclipse/DayOne/WebContent/WEB-INF/views/cust/list.jsp",
+		"/Users/ashutoshk/Documents/Code/eclipse/DayOne/WebContent/WEB-INF/views/cust/register.jsp",
+		"/private/var/folders/x8/3g0cqtnd0619vcft_9gwtbj80000gn/T/.entp.GwLahv/0/RssServiceTest.java",
+		"/Users/ashutoshk/Documents/Code/intellij/dayThree/rss-web/src/test/resources/javavids.xml",
+		"/Users/ashutoshk/Documents/Code/intellij/dayThree/rss-web/src/main/resources/properties/app.properties",
+		"/Users/ashutoshk/Documents/Code/intellij/dayThree/rss-web/src/main/resources/spring/store/spring-data-prod.xml",
+		"/Users/ashutoshk/Documents/Code/intellij/Code Trash/spring-web-rss-channels/rss-web/src/main/resources/properties/app.properties",
+		"/Users/ashutoshk/Documents/Code/intellij/dayThree/pom.xml",
+		"/Users/ashutoshk/Documents/Code/intellij/spring-web-rss-channels/rss-core/src/main/java/pl/dmichalski/rss/core/annotation/UsernameUnique.java",
+		"/Users/ashutoshk/Documents/Code/intellij/spring-web-rss-channels/rss-core/src/main/java/pl/dmichalski/rss/core/annotation/UsernameUniqueValidator.java",
+		"/Users/ashutoshk/Documents/Code/intellij/spring-web-rss-channels/rss-core/src/main/java/pl/dmichalski/rss/core/entity/UserEntity.java",
+		"/Users/ashutoshk/Documents/Code/intellij/spring-web-rss-channels/rss-web/src/test/java/pl/dmichalski/rss/core/service/impl/RssServiceTest.java",
+		"/Volumes/Ashutosh/java_others/ProductEntity.java",
+		"/Volumes/Ashutosh/java_others/login.jsp",
+		"/Volumes/Ashutosh/java_others/test_bootstrap.jsp",
+		"/Volumes/Ashutosh/java_others/CategoryEntity.java",
+		"/Volumes/Ashutosh/java_others/untitled",
+		"/Users/ashutoshk/Documents/Code/study/Java/Advance Java/day16/spring_web_hibernate_crud/src/com/app/pojos/Customer.java",
+		"/Users/ashutoshk/Documents/Code/study/Java/Advance Java/day16/spring_web_hibernate_crud/src/com/app/controller/CustomerController.java",
+		"/Users/ashutoshk/Desktop/Madhura Madam/day15_data/day15_spring_mvc/src/com/app/service/CustomerService.java",
+		"/Users/ashutoshk/Desktop/Madhura Madam/day15_data/day15_spring_mvc/src/com/app/controllers/HelloController.java",
+		"/Users/ashutoshk/Desktop/Madhura Madam/day17-data/eclipse projects/spring_hibernate_mvc_template/WebContent/WEB-INF/views/cust/login.jsp",
+		"/Users/ashutoshk/Desktop/Madhura Madam/day17-data/eclipse projects/spring_hibernate_mvc_template/src/com/app/controllers/CustomerController.java",
+		"/Users/ashutoshk/Desktop/Madhura Madam/day17-data/eclipse projects/spring_hibernate_mvc_template/src/com/app/service/CustomerDaoBasedService.java",
+		"/Users/ashutoshk/Desktop/Madhura Madam/day17-data/eclipse projects/spring_hibernate_mvc_template/src/com/app/service/CustomerServiceImpl.java",
+		"/Users/ashutoshk/Desktop/Madhura Madam/day17-data/eclipse projects/spring_hibernate_mvc_template/src/com/app/service/CustomerService.java",
+		"/Users/ashutoshk/Desktop/Madhura Madam/day17-data/eclipse projects/spring_web_hibernate_crud/build/classes/hibernate-persistence.xml",
+		"/Users/ashutoshk/Desktop/Madhura Madam/day17-data/eclipse projects/spring_web_hibernate_crud/resources/log4j.properties",
+		"/Users/ashutoshk/Desktop/Madhura Madam/day17-data/eclipse projects/spring_web_hibernate_crud/resources/hibernate-persistence.xml",
+		"/Users/ashutoshk/Desktop/Madhura Madam/day17-data/eclipse projects/spring_web_hibernate_crud/resources/database.properties",
+		"/Users/ashutoshk/Desktop/Madhura Madam/day17-data/eclipse projects/spring_web_hibernate_crud/src/com/app/controller/CustomerController.java",
+		"/Users/ashutoshk/Desktop/Madhura Madam/day17-data/eclipse projects/spring_web_hibernate_crud/src/com/app/controller/CustomerLogoutController.java",
+		"/Users/ashutoshk/Desktop/Madhura Madam/day17-data/eclipse projects/spring_web_hibernate_crud/src/com/app/dao/CustomerDao.java",
+		"/Users/ashutoshk/Desktop/Madhura Madam/day17-data/eclipse projects/spring_web_hibernate_crud/src/com/app/dao/CustomerDaoImpl.java",
+		"/Users/ashutoshk/Desktop/Madhura Madam/day17-data/eclipse projects/spring_web_hibernate_crud/src/com/app/pojos/Customer.java",
+		"/Users/ashutoshk/Documents/Code/dotfiles/env.sh",
+		"/Users/ashutoshk/abc.txt",
+		"/Volumes/Untitled/Madhura Maam/day18-data/day18-data/day18_help/spring-bootstrap/spring_mvc_hibernate_bootstrap/src/com/app/controller/HelloController.java",
+		"/Volumes/Untitled/Madhura Maam/day16_data/day16_data/spring_web_hibernate_crud/WebContent/index.jsp",
+		"/Users/ashutoshk/Documents/Code/spring-mvc-hibernate-skeleton/src/main/java/org/obs/OnlineBidS/dao/UserDao.java",
+		"/Users/ashutoshk/Documents/Code/spring-mvc-hibernate-skeleton/src/main/java/org/obs/OnlineBidS/dao/impl/UserDaoImpl.java",
+		"/Users/ashutoshk/Documents/Code/spring-mvc-hibernate-skeleton/src/main/java/org/obs/OnlineBidS/model/User.java",
+		"/Users/ashutoshk/Documents/Code/spring-mvc-hibernate-skeleton/src/main/java/org/obs/OnlineBidS/service/UserService.java",
+		"/Users/ashutoshk/Documents/Code/spring-mvc-hibernate-skeleton/src/main/java/org/obs/OnlineBidS/service/impl/UserDetailServiceImpl.java",
+		"/Users/ashutoshk/Documents/Code/spring-mvc-hibernate-skeleton/src/main/java/org/obs/OnlineBidS/service/impl/UserServiceImpl.java",
+		"/Users/ashutoshk/Documents/Code/spring-mvc-hibernate-skeleton/src/main/java/org/obs/OnlineBidS/web/AuthenticationController.java",
+		"/Users/ashutoshk/Documents/Code/spring-mvc-hibernate-skeleton/src/main/java/org/obs/OnlineBidS/web/SecretController.java",
+		"/Users/ashutoshk/Documents/Code/spring-mvc-hibernate-skeleton/src/main/java/org/obs/OnlineBidS/web/UserCommand.java",
+		"/Users/ashutoshk/Documents/Code/spring-mvc-hibernate-skeleton/src/main/java/org/obs/OnlineBidS/web/UserController.java",
+		"/Users/ashutoshk/Documents/Code/spring-mvc-hibernate-skeleton/src/main/java/org/obs/OnlineBidS/web/UserGrid.java",
+		"/Users/ashutoshk/Documents/Code/spring-mvc-hibernate-skeleton/src/main/resources/hibernate.cfg.xml",
+		"/Users/ashutoshk/Documents/Code/spring-mvc-hibernate-skeleton/src/main/java/com/dreamchain/skeleton/dao/UserDao.java",
+		"/Users/ashutoshk/Documents/Code/spring-mvc-hibernate-skeleton/src/main/java/com/dreamchain/skeleton/dao/impl/UserDaoImpl.java",
+		"/Users/ashutoshk/Documents/Code/spring-mvc-hibernate-skeleton/src/main/webapp/WEB-INF/views/user.jsp",
+		"/Users/ashutoshk/Documents/Code/spring-mvc-hibernate-skeleton/src/main/java/com/dreamchain/skeleton/model/User.java",
+		"/Users/ashutoshk/Documents/Code/spring-mvc-hibernate-skeleton/pom.xml",
+		"/Users/ashutoshk/Documents/Code/spring-mvc-hibernate-skeleton/src/main/webapp/WEB-INF/web.xml",
+		"/Users/ashutoshk/Documents/Code/spring-mvc-hibernate-skeleton/src/main/webapp/WEB-INF/web-security.xml",
+		"/Users/ashutoshk/Documents/Code/spring-mvc-hibernate-skeleton/src/test/java/org/obs/OnlineBidS/web/UserGridTest.java",
+		"/Users/ashutoshk/Documents/Code/spring-mvc-hibernate-skeleton/src/test/java/org/obs/OnlineBidS/selenium/HomeTest.java",
+		"/Users/ashutoshk/Documents/Code/spring-mvc-hibernate-skeleton/src/test/java/org/obs/OnlineBidS/selenium/Database.java",
+		"/Users/ashutoshk/Documents/Code/spring-mvc-hibernate-skeleton/src/test/java/org/obs/OnlineBidS/model/UserTest.java",
+		"/Users/ashutoshk/Documents/Code/spring-mvc-hibernate-skeleton/src/test/java/org/obs/OnlineBidS/dao/impl/UserDaoImplTest.java",
+		"/Users/ashutoshk/Documents/Code/spring-mvc-hibernate-skeleton/src/test/java/org/obs/OnlineBidS/dao/impl/DaoTest.java",
+		"/Users/ashutoshk/Documents/Code/spring-mvc-hibernate-skeleton/src/main/webapp/WEB-INF/spring-mvc-servlet.xml",
+		"/Users/ashutoshk/Documents/Code/spring-mvc-hibernate-skeleton/src/main/webapp/WEB-INF/applicationContext.xml",
+		"/Users/ashutoshk/Documents/Code/spring-mvc-hibernate-skeleton/src/main/resources/spring/persistence-config.xml",
+		"/Users/ashutoshk/Documents/Code/spring-mvc-hibernate-skeleton/src/main/resources/spring/app-config.xml",
+		"/Users/ashutoshk/Desktop/Madhura Madam/day9_jsp/WebContent/login.jsp",
+		"/Users/ashutoshk/Desktop/Madhura Madam/day17-data/eclipse projects/spring_hibernate_mvc_template/src/com/app/pojos/Customer.java",
+		"/Users/ashutoshk/Desktop/Madhura Madam/day17-data/eclipse projects/spring_hibernate_rest_bank_server/src/com/app/dao/BankDao.java",
+		"/Users/ashutoshk/Desktop/Madhura Madam/day17-data/day17_help/spring/sequence1.txt",
+		"/Users/ashutoshk/Desktop/Madhura Madam/day17-data/eclipse projects/spring_web_hibernate_crud/WebContent/WEB-INF/views/cust/register.jsp",
+		"/Users/ashutoshk/Desktop/Madhura Madam/day17-data/eclipse projects/spring_hibernate_mvc_template/WebContent/WEB-INF/views/cust/register.jsp",
+		"/Users/ashutoshk/Desktop/Madhura Madam/day9_jsp/WebContent/logout.jsp",
+		"/Users/ashutoshk/Desktop/Madhura Madam/day9_jsp/WebContent/my_err_handler.jsp",
+		"/Users/ashutoshk/Desktop/Madhura Madam/day9_jsp/WebContent/one.jsp",
+		"/Users/ashutoshk/Desktop/Madhura Madam/day9_jsp/WebContent/summary.jsp",
+		"/Users/ashutoshk/Desktop/Madhura Madam/day9_jsp/WebContent/transactions.jsp",
+		"/Users/ashutoshk/Desktop/Madhura Madam/day9_jsp/WebContent/two.jsp",
+		"/Users/ashutoshk/Desktop/Madhura Madam/day9_jsp/WebContent/validate.jsp",
+		"/Users/ashutoshk/Desktop/Madhura Madam/day17-data/eclipse projects/spring_hibernate_mvc_template/src/com/app/controllers/HelloController.java",
+		"/Users/ashutoshk/Desktop/Madhura Madam/day17-data/eclipse projects/spring_hibernate_mvc_template/src/com/app/controllers/Hello2Controller.java",
+		"/Users/ashutoshk/Desktop/Madhura Madam/day14-data/day14_mvc_hibernate/src/utils/HibernateUtils.java",
+		"/Users/ashutoshk/Desktop/Madhura Madam/day14-data/day14_mvc_hibernate/src/pojos/Customer.java",
+		"/Users/ashutoshk/Desktop/Madhura Madam/day14-data/day14_mvc_hibernate/src/pages/ValidateServlet.java",
+		"/Users/ashutoshk/Desktop/Madhura Madam/day14-data/day14_mvc_hibernate/src/pages/FrontController.java",
+		"/Users/ashutoshk/Desktop/Madhura Madam/day14-data/day14_spring_annotations/src/dependency/Transport.java",
+		"/Users/ashutoshk/Desktop/Madhura Madam/day14-data/day14_spring_annotations/src/dependency/TestTransport.java",
+		"/Users/ashutoshk/Desktop/Madhura Madam/day14-data/day14_spring_annotations/src/dependency/SoapTransport.java",
+		"/Users/ashutoshk/Desktop/Madhura Madam/day14-data/day14_mvc_hibernate/src/beans/CustomerBean.java",
+		"/Users/ashutoshk/Desktop/Madhura Madam/day14-data/day14_mvc_hibernate/src/dao/CustomerDAO.java",
+		"/Users/ashutoshk/Desktop/Madhura Madam/day14-data/day14_mvc_hibernate/src/listeners/HibCtxListener.java",
+		"/Users/ashutoshk/Desktop/Madhura Madam/day14-data/day14_spring_annotations/src/dependency/HttpTransport.java",
+		"/Volumes/SUFI/ashu/abcsql.txt"
+	],
+	"find":
+	{
+		"height": 31.0
+	},
+	"find_in_files":
+	{
+		"height": 125.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			",",
+			";",
+			" {",
+			"Override",
+			"//\t",
+			"\t",
+			"Customer",
+			"Object(\"id\" => idval, \"\")"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 31.0
+	},
+	"input":
+	{
+		"height": 47.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 224.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.preferences_editor_help":
+	{
+		"height": 170.0
+	},
+	"output.sftp":
+	{
+		"height": 0.0
+	},
+	"output.unsaved_changes":
+	{
+		"height": 170.0
+	},
+	"output.variable_get":
+	{
+		"height": 170.0
+	},
+	"pinned_build_system": "Packages/C++/C++ Single File.sublime-build",
+	"project": "dayone.sublime-project",
+	"replace":
+	{
+		"height": 58.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"produc",
+				"src/com/obs/pojos/Product.java"
+			],
+			[
+				"categ",
+				"src/com/obs/pojos/Category.java"
+			],
+			[
+				"regi",
+				"WebContent/WEB-INF/views/cust/register.jsp"
+			],
+			[
+				"app",
+				"rss-web/src/main/resources/properties/app.properties"
+			],
+			[
+				"web",
+				"rss-web/src/main/webapp/WEB-INF/web.xml"
+			],
+			[
+				"cusco",
+				"src/com/app/controllers/CustomerController.java"
+			],
+			[
+				"index",
+				"DAY 5/day5_web/WebContent/index.html"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"~/Documents/Junk/alladv.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 248.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
