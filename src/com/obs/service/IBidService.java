@@ -1,5 +1,6 @@
 package com.obs.service;
 
+import java.text.ParseException;
 import java.util.List;
 
 import com.obs.pojos.*;
@@ -12,6 +13,8 @@ public interface IBidService {
 	public List<Bid> getAllBids();
 
 	public Bid bidOnThis(Bid b);
+
+	public String bidThis(Integer id);
 
 	public String deleteBid(Bid p);
 

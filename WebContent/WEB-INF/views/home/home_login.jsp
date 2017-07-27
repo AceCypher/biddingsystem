@@ -39,20 +39,21 @@
 </c:choose>
 <div class="services container">
    <c:forEach items="${bid_list}" var="item">
-   		<c:set var="keyString">${item.productId}</c:set>
+   		<c:set var="keyString">${item.id}</c:set>
     		<div class="row">
 		    <section class="col xs-12 col-sm-6 col-md-3 col-lg-2 gridCell">
 		      <h2>${prod_list[keyString].productName}</h2>
 		      <a href="#"><img class="icon" src="<spring:url value='/resources/img/${prod_list[keyString].productImageUrl}'/>" alt="Icon">
 		      </a>
-		      <h3>₹ ${prod_list[keyString].productBaseAmount}</h3>
+		      <h3 id="bid_amt_${keyString}">₹ ${item.finalBidAmount}</h3>
+		      <!-- productBaseAmount -->
 		      <input type="hidden" name="product" value="${keyString}" />
 		      <input type="hidden" id="time_${keyString}" name="time_${keyString}" value="${prod_time[keyString]}" />
 		      <input type="hidden" name="bid_start" value="${item.timerStart}" />
 		      <input type="hidden" name="bid_end" value="${item.timerEnd}" />
-		      <span id="${keyString}" class="timer"></span><br/>
+		      <span id="${keyString}" mdd="timer_${keyString}" class="timer"></span><br/>
 		      <h3>${prod_list[keyString].productDesc}</h3>
-		      <button type="button" id="btn_${keyString}" class="btn btn-primary buyButton">Bid Now</button>		      
+		      <button type="button" id="btn_${keyString}" class="btn btn-primary buyButton bidButton">Bid Now by ₹ 100</button>		      
 		      <br/>
 		    </section>
 		</div>
@@ -85,13 +86,36 @@ $(function(){
     		var curTime = timeString.split('-');
     		
     		var x = $('#'+prodId).countdowntimer({
-    	        hours :curTime[0],
-    	        minutes :curTime[1],
+    	        hours :00,//curTime[0],
+    	        minutes :00,//curTime[1],
     	        seconds :curTime[2],
     	        size : "md"
     	    });
     		
     		console.log(" Product Id " + prodId +" CurrTime Arr " + curTime.toSource() + " TimeString " + timeString +" timer "+x.toSource());
+	});
+	$("button.bidButton").on("click", function(){
+		var bidId = $(this).attr('id').split('_')[1];
+		var saveData = $.ajax({
+		      type: 'POST',
+		      url: "${pageContext.servletContext.contextPath}/home/check",
+		      data: {'bidId' : bidId},
+		      dataType: "text",
+		      success: function(resultData) { 
+		    	  				/* alert(resultData.toSource()); */
+		    	  				if(resultData.length > 0){
+		    	  					$("#bid_amt_"+bidId).html(resultData);
+		    	  					alert("Bidding Successful!");
+		    	  				}
+		    	  				else{
+		    	  					alert("Bidding failed. Server timeout!");
+		    	  					$("#"+bidId+".colorDefinition").removeAttr("id").html("--Bid Ended--");
+		    	  					$("#btn_"+bidId).attr('disable', 'disable').addClass('disabled').unbind( "click" );
+		    	  					$(this).html("--Bid Ended--");
+		    	  					console.log(bidId+ " bidding failed! ");
+		    	  				}
+  	  				}
+		});
 	});
 	
 });
@@ -100,10 +124,10 @@ $(function(){
 window.setInterval(function(){
 	$('.colorDefinition').each(function(i, obj) {
 		if($(this).text()=='00:00:00'){
-			alert($(this).attr('id') + " Ended!");
-			$("#btn_"+$(this).attr('id')).attr('disable', 'disable').addClass('disabled');
-			$(this).html("");
-			$(this).html("--Ended--");
+			var bidId = $(this).attr('id');
+			console.log($(this).attr('id') + " Ended!");
+			$("#btn_"+$(this).attr('id')).attr('disable', 'disable').addClass('disabled').unbind( "click" );
+			$(this).html("--Bid Ended--");
 		}
 	});
 }, 1000);

@@ -15,6 +15,7 @@ import org.joda.time.Seconds;
 
 import javax.annotation.PostConstruct;
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import javax.validation.Valid;
 
@@ -30,6 +31,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import com.obs.pojos.*;
@@ -104,6 +106,14 @@ public class HomeController {
 		return "redirect:/home/add_bid";
 	}
 
+	
+	@PostMapping("/check")     
+	@ResponseBody
+	public String processBid(@RequestParam Integer bidId, HttpServletRequest request, HttpServletResponse response, Model model) {
+		System.out.println("in process bid form " + bidId);
+		
+		return service.bidThis(bidId);
+	}
 	@GetMapping("/{path}")
 	public String globalMapper(@PathVariable String path) {
 		System.out.println("in global " + path);
