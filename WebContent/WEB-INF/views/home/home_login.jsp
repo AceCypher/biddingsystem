@@ -123,12 +123,24 @@ $(function(){
 
 window.setInterval(function(){
 	$('.colorDefinition').each(function(i, obj) {
+		var bidId = $(this).attr('id');
 		if($(this).text()=='00:00:00'){
 			var bidId = $(this).attr('id');
 			console.log($(this).attr('id') + " Ended!");
 			$("#btn_"+$(this).attr('id')).attr('disable', 'disable').addClass('disabled').unbind( "click" );
 			$(this).html("--Bid Ended--");
 		}
+		var saveData = $.ajax({
+		      type: 'POST',
+		      url: "${pageContext.servletContext.contextPath}/home/updatePrice",
+		      data: {'bidId' : bidId},
+		      dataType: "text",
+		      success: function(resultData) { 
+		    	  				if(resultData.length > 0){
+		    	  					$("#bid_amt_"+bidId).html(resultData);
+		    	  				}
+	  				}
+		});
 	});
 }, 1000);
 

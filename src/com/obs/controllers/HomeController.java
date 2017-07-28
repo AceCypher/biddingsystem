@@ -114,6 +114,13 @@ public class HomeController {
 		
 		return service.bidThis(bidId);
 	}
+	@PostMapping("/updatePrice")     
+	@ResponseBody
+	public String updateBid(@RequestParam Integer bidId, HttpServletRequest request, HttpServletResponse response, Model model) {
+		System.out.println("in update bid form " + bidId);
+		
+		return service.getBidAmount(service.getBid(bidId)).toString();
+	}
 	@GetMapping("/{path}")
 	public String globalMapper(@PathVariable String path) {
 		System.out.println("in global " + path);
