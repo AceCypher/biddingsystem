@@ -29,7 +29,7 @@ table, th, td {
 .services {
   text-align: center;
   margin-top: 100px;
-  margin-bottom: 50px;
+  margin-bottom:50px;
 }
 
 .headerBgImage{
@@ -54,10 +54,9 @@ table, th, td {
 
 
 .gridCell{
-	margin:5px;
 	background-color: #fff;
     background-color: rgba(255,255,255,0.8);
-	border: thin;
+	border: medium;
 	border-style: solid;
 }
 .gridSection{

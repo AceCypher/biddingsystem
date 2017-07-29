@@ -2,6 +2,8 @@
     pageEncoding="UTF-8"%>
 <%@ taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
 <%@ taglib uri="http://www.springframework.org/tags" prefix="spring"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <!DOCTYPE>
 <html>
 <head>
@@ -28,24 +30,52 @@
 	    <a  href="contact">Contact Us | </a>
   </div>
 </header>
-
+<c:choose>
+    <c:when test="${bid_list == null || bid_list.size() == 0}">
+        <div id="post-alert" class="alert alert-warning" role="alert">
+            <spring:message text="Error Showing bids."/>
+        </div>
+    </c:when>
+</c:choose>
 <div class="services container">
-<c:forEach items="${bid_list}" var="item">
-    <div class="row">
-    <section class="col xs-12 col-sm-6 col-md-3 col-lg-2 gridCell">
-      <a href="#"><img class="icon" src="<spring:url value='/resources/img/placeholder.jpg'/>" alt="Icon">
-      </a>
-      <h3></h3>
-      <h2>₹ 999</h2>
-      <span id="hms_timer" class="timer"></span>
-      <p>Generic placeholder text, bla bla bla bla bla bla bla bla bla bla bla</p>
-      <button type="button" class="btn btn-primary buyButton">Buy Now</button>
-      <br>
-    </section>
-  </div><!-- row -->
-  </c:forEach>   
+<div class="row">
+   <c:forEach items="${bid_list}" var="item">
+   		<c:set var="keyString">${item.id}</c:set>
+    			<section class="col xs-12 col-sm-6 col-md-3 col-lg-2 gridCell">
+			      <h2>${prod_list[keyString].productName}</h2>
+			      <a href="#"><img class="icon" src="<spring:url value='/resources/img/${prod_list[keyString].productImageUrl}'/>" alt="Icon">
+			      </a>
+			      <h3 id="bid_amt_${keyString}">₹ ${item.finalBidAmount}</h3>
+			      <!-- productBaseAmount -->
+			      <input type="hidden" name="product" value="${keyString}" />
+			      <input type="hidden" id="time_${keyString}" name="time_${keyString}" value="${prod_time[keyString]}" />
+			      <input type="hidden" name="bid_start" value="${item.timerStart}" />
+			      <input type="hidden" name="bid_end" value="${item.timerEnd}" />
+			      <span id="${keyString}" mdd="timer_${keyString}" class="timer"></span><br/>
+			      <h3>${prod_list[keyString].productDesc}</h3>
+			      <button type="button" id="btn_${keyString}" class="btn btn-primary buyButton bidButton">Bid Now by ₹ 100</button>		      
+			      <br/>
+			    </section>
+		    <%-- <section class="col xs-12 col-sm-6 col-md-3 col-lg-2 gridCell">
+		      <h2>${prod_list[keyString].productName}</h2>
+		      <a href="#"><img class="icon" src="<spring:url value='/resources/img/${prod_list[keyString].productImageUrl}'/>" alt="Icon">
+		      </a>
+		      <h3 id="bid_amt_${keyString}">₹ ${item.finalBidAmount}</h3>
+		      <!-- productBaseAmount -->
+		      <input type="hidden" name="product" value="${keyString}" />
+		      <input type="hidden" id="time_${keyString}" name="time_${keyString}" value="${prod_time[keyString]}" />
+		      <input type="hidden" name="bid_start" value="${item.timerStart}" />
+		      <input type="hidden" name="bid_end" value="${item.timerEnd}" />
+		      <span id="${keyString}" mdd="timer_${keyString}" class="timer"></span><br/>
+		      <h3>${prod_list[keyString].productDesc}</h3>
+		      <button type="button" id="btn_${keyString}" class="btn btn-primary buyButton bidButton">Bid Now by ₹ 100</button>		      
+		      <br/>
+		    </section> --%>
+		
+     </c:forEach> 
+     </div>
+     
 </div><!-- content container -->
-
 
 <footer class="footer navbar-fixed-bottom">
 	<div class="backToTop">
@@ -63,14 +93,52 @@
 <script src="<spring:url value='/resources/js/jquery.countdownTimer.min.js'/>"></script>
 <script>
 $(function(){
-	$('#hms_timer').countdowntimer({
-        hours : 3,
-        minutes :10,
-        seconds : 21,
-        size : "lg"
-    });
+	$('.timer').each(function(i, obj) {
+    		
+    		var prodId = $(this).attr('id');
+    		var timeString = $("#time_"+prodId).val();
+    		var curTime = timeString.split('-');
+    		
+    		var x = $('#'+prodId).countdowntimer({
+    	        hours :curTime[0],
+    	        minutes :curTime[1],
+    	        seconds :curTime[2],
+    	        size : "md"
+    	    });
+    		
+    		console.log(" Product Id " + prodId +" CurrTime Arr " + curTime.toSource() + " TimeString " + timeString +" timer "+x.toSource());
+	});
+	$("button.bidButton").on("click", function(){
+		window.location.href = "${pageContext.servletContext.contextPath}/cust/login";
+	});
+	
 });
+
+
+window.setInterval(function(){
+	$('.colorDefinition').each(function(i, obj) {
+		var bidId = $(this).attr('id');
+		if($(this).text()=='00:00:00'){
+			var bidId = $(this).attr('id');
+			console.log($(this).attr('id') + " Ended!");
+			$("#btn_"+$(this).attr('id')).attr('disable', 'disable').addClass('disabled').unbind( "click" );
+			$(this).html("--Ended--");
+		}
+		var saveData = $.ajax({
+		      type: 'POST',
+		      url: "${pageContext.servletContext.contextPath}/home/updatePrice",
+		      data: {'bidId' : bidId},
+		      dataType: "text",
+		      success: function(resultData) { 
+		    	  				if(resultData.length > 0){
+		    	  					$("#bid_amt_"+bidId).html(resultData);
+		    	  				}
+	  				}
+		});
+	});
+}, 1000);
+
+
 </script>
 </body>
 </html>
-
