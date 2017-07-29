@@ -109,6 +109,7 @@ public class BidServiceImpl implements IBidService{
 		Bid b = dao.getBidById(id);
 		if(this.getBidStatus(b) == false){
 			System.out.println("Bid Failed");
+			deleteBid(b);
 			return "";
 		}
 		b.setFinalBidAmount(b.getFinalBidAmount()+100);

@@ -114,6 +114,15 @@ public class HomeController {
 		
 		return service.bidThis(bidId);
 	}
+	
+	@PostMapping("/delete")     
+	@ResponseBody
+	public String deleteBid(@RequestParam Integer bidId, HttpServletRequest request, HttpServletResponse response, Model model) {
+		
+		
+		return service.deleteBid(service.getBid(bidId)).toString();
+	}
+	
 	@PostMapping("/updatePrice")     
 	@ResponseBody
 	public String updateBid(@RequestParam Integer bidId, HttpServletRequest request, HttpServletResponse response, Model model) {

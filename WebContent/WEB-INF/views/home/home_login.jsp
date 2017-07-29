@@ -141,6 +141,20 @@ window.setInterval(function(){
 			var bidId = $(this).attr('id');
 			console.log($(this).attr('id') + " Ended!");
 			$("#btn_"+$(this).attr('id')).attr('disable', 'disable').addClass('disabled').unbind( "click" );
+			$("button.bidButton").on("click", function(){
+				var bidId = $(this).attr('id').split('_')[1];
+				var saveData = $.ajax({
+				      type: 'POST',
+				      url: "${pageContext.servletContext.contextPath}/home/delete",
+				      data: {'bidId' : bidId},
+				      dataType: "text",
+				      success: function(resultData) { 
+				    	  				if(resultData.length > 0){
+				    	  					console.log(bidId+ " bidding deleted! ");
+				    	  				}
+		  	  				}
+				});
+			});
 			$(this).html("--Ended--");
 		}
 		var saveData = $.ajax({
